@@ -1,0 +1,17 @@
+.description {
+  padding-top: 190px;
+  max-width: 70%;
+  margin: auto;
+  z-index: 2;
+}
+
+.description__lose {
+  font-size: xx-large;
+  margin-bottom: 18px;
+}
+
+.description__slogan {
+  font-size: large;
+  font-weight: 400;
+  margin-bottom: 50px;
+}

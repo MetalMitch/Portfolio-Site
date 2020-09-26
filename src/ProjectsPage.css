@@ -1,0 +1,18 @@
+.projectPage {
+  padding-top: 125px;
+}
+
+.projectPage__projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .projectPage__projects {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,12 @@
+.social {
+  color: white;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.social:hover {
+  color: #1e8eff;
+  background-color: white;
+}

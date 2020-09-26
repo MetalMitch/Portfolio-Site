@@ -1,0 +1,52 @@
+.footer {
+  background-color: #1e8eff;
+  color: white;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__logo {
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 50%;
+  width: fit-content;
+  color: white;
+  fill: currentColor;
+}
+
+.socials {
+  margin-top: 25px;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  line-height: 1;
+}
+
+.final {
+  margin: 25px 0;
+}
+
+.App-logo {
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.footer__title {
+  margin-top: 25px;
+}

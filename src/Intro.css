@@ -1,0 +1,26 @@
+.intro {
+  padding-bottom: 75px;
+}
+
+.intro__logo {
+  display: flex;
+  justify-content: center;
+  color: #1e8eff;
+  fill: currentColor;
+}
+
+.intro__paragraph {
+  background-color: #1e8eff;
+  color: white;
+  padding: 75px 0;
+}
+
+.intro__paragraph > h4 {
+  padding-bottom: 20px;
+  font-size: x-large;
+}
+
+.intro__paragraph > p {
+  margin: 6px auto;
+  max-width: 50ch;
+}
