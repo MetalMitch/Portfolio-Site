@@ -11,6 +11,7 @@ import WatchLaterIcon from "@material-ui/icons/WatchLater";
 import Footer from "./Footer.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Preview from "./preview.png";
 
 import YouTubeClone from "./assets/youtube-clone.jpg";
 import NetflixClone from "./assets/netflix-clone.jpg";
@@ -48,6 +49,15 @@ const ambitions = [
 function App() {
   return (
     <div className="App">
+      <Helmet>
+        <meta
+          name="keywords"
+          content="HTML, CSS, JavaScript, Professional, Computing, Technology, Junior, Graduate, JavaScript, React, ReactJS, Experienced, Communication"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={Preview} />
+        <meta property="twitter:image" content={Preview} />
+      </Helmet>
       <Router>
         <Nav />
         <Switch>
@@ -55,8 +65,36 @@ function App() {
             <Helmet>
               <title>{`Mitchell Skee | ` + projects.YouTube.projectName}</title>
               <meta
+                property="og:title"
+                content={`Mitchell Skee | ` + projects.YouTube.projectName}
+              />
+              <meta
+                property="twitter:title"
+                content={`Mitchell Skee | ` + projects.YouTube.projectName}
+              />
+              <meta
                 name="description"
                 content={projects.YouTube.projectDescriptionSml}
+              />
+              <meta
+                name="description"
+                content={projects.YouTube.projectDescriptionSml}
+              />
+              <meta
+                name="og:description"
+                content={projects.YouTube.projectDescriptionSml}
+              />
+              <meta
+                name="twitter:description"
+                content={projects.YouTube.projectDescriptionSml}
+              />
+              <meta
+                property="og:url"
+                content="https://www.mskee.co.uk/projects/YouTube-Clone"
+              />
+              <meta
+                property="twitter:url"
+                content="https://www.mskee.co.uk/projects/YouTube-Clone"
               />
             </Helmet>
             <ProjectPage
@@ -71,8 +109,32 @@ function App() {
             <Helmet>
               <title>{`Mitchell Skee | ` + projects.Netflix.projectName}</title>
               <meta
+                property="og:title"
+                content={`Mitchell Skee | ` + projects.Netflix.projectName}
+              />
+              <meta
+                property="twitter:title"
+                content={`Mitchell Skee | ` + projects.Netflix.projectName}
+              />
+              <meta
                 name="description"
                 content={projects.Netflix.projectDescriptionSml}
+              />
+              <meta
+                name="og:description"
+                content={projects.Netflix.projectDescriptionSml}
+              />
+              <meta
+                name="twitter:description"
+                content={projects.Netflix.projectDescriptionSml}
+              />
+              <meta
+                property="og:url"
+                content="https://www.mskee.co.uk/projects/Netflix-Clone"
+              />
+              <meta
+                property="twitter:url"
+                content="https://www.mskee.co.uk/projects/Netflix-Clone"
               />
             </Helmet>
             <ProjectPage
@@ -89,8 +151,32 @@ function App() {
                 {`Mitchell Skee | ` + projects.FlexByDesign.projectName}
               </title>
               <meta
+                property="og:title"
+                content={`Mitchell Skee | ` + projects.FlexByDesign.projectName}
+              />
+              <meta
+                property="twitter:title"
+                content={`Mitchell Skee | ` + projects.FlexByDesign.projectName}
+              />
+              <meta
+                name="og:description"
+                content={projects.FlexByDesign.projectDescriptionSml}
+              />
+              <meta
+                name="twitter:description"
+                content={projects.FlexByDesign.projectDescriptionSml}
+              />
+              <meta
                 name="description"
                 content={projects.FlexByDesign.projectDescriptionSml}
+              />
+              <meta
+                property="og:url"
+                content="https://www.mskee.co.uk/projects/FlexByDesign"
+              />
+              <meta
+                property="twitter:url"
+                content="https://www.mskee.co.uk/projects/FlexByDesign"
               />
             </Helmet>
             <ProjectPage
@@ -104,9 +190,30 @@ function App() {
           <Route path="/projects/">
             <Helmet>
               <title>Mitchell Skee | Projects</title>
+              <meta property="og:title" content="Mitchell Skee | Projects" />
+              <meta
+                property="twitter:title"
+                content="Mitchell Skee | Projects"
+              />
               <meta
                 name="description"
-                content="A list of Mitchell Skee's projects, both professional and personal, all with the aim to improve knowledge and skillbase."
+                content="A list of Mitchell Skee's projects, both professional and personal, all with the aim to improve knowledge and skill-base."
+              />
+              <meta
+                name="og:description"
+                content="A list of Mitchell Skee's projects, both professional and personal, all with the aim to improve knowledge and skill-base."
+              />
+              <meta
+                name="twitter:description"
+                content="A list of Mitchell Skee's projects, both professional and personal, all with the aim to improve knowledge and skill-base."
+              />
+              <meta
+                property="og:url"
+                content="https://www.mskee.co.uk/projects/"
+              />
+              <meta
+                property="twitter:url"
+                content="https://www.mskee.co.uk/projects/"
               />
             </Helmet>
             <div className="app__page">
@@ -117,9 +224,27 @@ function App() {
             <Helmet>
               <title>Mitchell Skee | Web Developer</title>
               <meta
+                property="og:title"
+                content="Mitchell Skee | Web Developer"
+              />
+              <meta
+                property="twitter:title"
+                content="Mitchell Skee | Web Developer"
+              />
+              <meta
                 name="description"
                 content="A professional, mature, versatile, individual and team player, with Proven ability to lead, participate, be challenged and deliver results."
               />
+              <meta
+                name="twitter:description"
+                content="A professional, mature, versatile, individual and team player, with Proven ability to lead, participate, be challenged and deliver results."
+              />
+              <meta
+                property="og:description"
+                content="A professional, mature, versatile, individual and team player, with Proven ability to lead, participate, be challenged and deliver results."
+              />
+              <meta property="og:url" content="https://www.mskee.co.uk/" />
+              <meta property="twitter:url" content="https://www.mskee.co.uk/" />
             </Helmet>
             <div className="app__page">
               <Description />
