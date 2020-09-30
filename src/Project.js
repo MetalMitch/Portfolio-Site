@@ -5,28 +5,38 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 function Project({
   projectName,
   projectLink,
-  projectDescription,
+  projectDescriptionSml,
   projectImg,
   projectGithub,
 }) {
-  return (
-    <div className="project">
-      <a href={projectLink}>
+  if (projectGithub) {
+    return (
+      <div className="project">
         <div className="project__img">
           <img src={projectImg} alt="" />
         </div>
-      </a>
-      <div className="project__description">
-        <h5 className="description__h5">{projectName}</h5>
-        <p className="description__p">{projectDescription}</p>
-      </div>
-      <a href={projectGithub}>
-        <div className="project__github">
-          <GitHubIcon className="github__icon" />
+        <div className="project__description">
+          <h5 className="description__h5">{projectName}</h5>
+          <p className="description__p">{projectDescriptionSml}</p>
         </div>
-      </a>
-    </div>
-  );
+        <div className="project__github">
+          <GitHubIcon className="github__icon" /> Available
+        </div>
+      </div>
+    );
+  } else {
+    return (
+      <div className="project">
+        <div className="project__img">
+          <img src={projectImg} alt="" />
+        </div>
+        <div className="project__description">
+          <h5 className="description__h5">{projectName}</h5>
+          <p className="description__p">{projectDescriptionSml}</p>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Project;

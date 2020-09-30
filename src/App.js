@@ -4,13 +4,21 @@ import Nav from "./Nav.js";
 import Description from "./Description.js";
 import Intro from "./Intro.js";
 import Skill from "./Skill.js";
-import ProjectsPage from "./ProjectsPage";
-
+import ProjectListPage from "./ProjectListPage.js";
 import PersonIcon from "@material-ui/icons/Person";
 import CodeIcon from "@material-ui/icons/Code";
 import WatchLaterIcon from "@material-ui/icons/WatchLater";
 import Footer from "./Footer.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Helmet } from "react-helmet";
+
+import YouTubeClone from "./assets/youtube-clone.jpg";
+import NetflixClone from "./assets/netflix-clone.jpg";
+import Flex from "./assets/flexbydesign.jpg";
+
+import ProjectPage from "./ProjectPage.js";
+
+import { projects } from "./projectsOb.js";
 
 const personal = [
   { name: "Good Communication" },
@@ -43,12 +51,53 @@ function App() {
       <Router>
         <Nav />
         <Switch>
+          <Route path="/projects/YouTube-Clone">
+            <ProjectPage
+              projectName={projects.YouTube.projectName}
+              projectLink={projects.YouTube.projectLink}
+              projectDescription={projects.YouTube.projectDescription}
+              projectImg={YouTubeClone}
+              projectGithub={projects.YouTube.projectGithub}
+            />
+          </Route>
+          <Route path="/projects/Netflix-Clone">
+            <ProjectPage
+              projectName={projects.Netflix.projectName}
+              projectLink={projects.Netflix.projectLink}
+              projectDescription={projects.Netflix.projectDescription}
+              projectImg={NetflixClone}
+              projectGithub={projects.Netflix.projectGithub}
+            />
+          </Route>
+          <Route path="/projects/FlexByDesign">
+            <ProjectPage
+              projectName={projects.FlexByDesign.projectName}
+              projectLink={projects.FlexByDesign.projectLink}
+              projectDescription={projects.FlexByDesign.projectDescription}
+              projectImg={Flex}
+              projectGithub={projects.FlexByDesign.projectGithub}
+            />
+          </Route>
           <Route path="/projects/">
+            <Helmet>
+              <title>Mitchell Skee | Projects</title>
+              <meta
+                name="description"
+                content="A list of Mitchell Skee's projects, both professional and personal, all with the aim to improve knowledge and skillbase."
+              />
+            </Helmet>
             <div className="app__page">
-              <ProjectsPage />
+              <ProjectListPage projects={projects} />
             </div>
           </Route>
           <Route path="/">
+            <Helmet>
+              <title>Mitchell Skee | Web Developer</title>
+              <meta
+                name="description"
+                content="A professional, mature, versatile, individual and team player, with Proven ability to lead, participate, be challenged and deliver results."
+              />
+            </Helmet>
             <div className="app__page">
               <Description />
               <Intro />

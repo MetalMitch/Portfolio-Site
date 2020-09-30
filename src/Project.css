@@ -52,7 +52,7 @@ a {
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   padding: 0.5em 1em;
   text-align: center;
-
+  color: black;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -61,16 +61,16 @@ a {
   margin: 0px;
   font-size: 1.4em;
   font-weight: 700;
-
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 .description__p {
   font-size: 12px;
+  white-space: pre-line;
 }
 
-.project__github > .github__icon {
+.github__icon {
   position: absolute;
   bottom: 1em;
   left: 1em;
@@ -91,7 +91,10 @@ a {
   background-color: white;
 }
 
-.project:hover .github__icon:hover {
-  color: #1e8eff;
+.project:hover {
   cursor: pointer;
+}
+
+.project:hover > .project__github {
+  display: none;
 }

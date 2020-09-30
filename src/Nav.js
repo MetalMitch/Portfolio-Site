@@ -12,7 +12,7 @@ function Nav() {
             <img src={logo} alt="Mitchell Skee" />
           </div>
         </Link>
-        <Link to="/projects">
+        <Link to="/projects/">
           <div className="nav__contact">
             <h6>Projects</h6>
           </div>
