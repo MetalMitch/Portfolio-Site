@@ -11,7 +11,7 @@ import WatchLaterIcon from "@material-ui/icons/WatchLater";
 import Footer from "./Footer.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import Preview from "./preview.png";
+import Preview from "./assets/preview.png";
 
 import YouTubeClone from "./assets/youtube-clone.jpg";
 import NetflixClone from "./assets/netflix-clone.jpg";
