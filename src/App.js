@@ -52,6 +52,13 @@ function App() {
         <Nav />
         <Switch>
           <Route path="/projects/YouTube-Clone">
+            <Helmet>
+              <title>{`Mitchell Skee | ` + projects.YouTube.projectName}</title>
+              <meta
+                name="description"
+                content={projects.YouTube.projectDescriptionSml}
+              />
+            </Helmet>
             <ProjectPage
               projectName={projects.YouTube.projectName}
               projectLink={projects.YouTube.projectLink}
@@ -61,6 +68,13 @@ function App() {
             />
           </Route>
           <Route path="/projects/Netflix-Clone">
+            <Helmet>
+              <title>{`Mitchell Skee | ` + projects.Netflix.projectName}</title>
+              <meta
+                name="description"
+                content={projects.Netflix.projectDescriptionSml}
+              />
+            </Helmet>
             <ProjectPage
               projectName={projects.Netflix.projectName}
               projectLink={projects.Netflix.projectLink}
@@ -70,6 +84,15 @@ function App() {
             />
           </Route>
           <Route path="/projects/FlexByDesign">
+            <Helmet>
+              <title>
+                {`Mitchell Skee | ` + projects.FlexByDesign.projectName}
+              </title>
+              <meta
+                name="description"
+                content={projects.FlexByDesign.projectDescriptionSml}
+              />
+            </Helmet>
             <ProjectPage
               projectName={projects.FlexByDesign.projectName}
               projectLink={projects.FlexByDesign.projectLink}
